@@ -1,6 +1,6 @@
-## Interface: 30300
+## Interface: 40300
 ## Author: p3lim
-## Version: 30300.1-Beta
+## Version: 30300.2-Beta
 ## Title: Dolemite
 ## Notes: One-click Disenchanting!
 

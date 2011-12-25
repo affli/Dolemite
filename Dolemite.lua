@@ -42,7 +42,7 @@ function button:PLAYER_LOGIN()
 			if(not (type == ARMOR_TYPE or type == ENCHSLOT_WEAPON) or not (quality and (quality > 1 and quality < 5))) then return end
 
 			local bag, slot = GetMouseFocus():GetParent(), GetMouseFocus()
-			if(GetContainerItemInfo(bag:GetID(), slot:GetID()) and bag ~= PaperDollFrameItemFlyoutButtons and bag ~= PaperDollItemsFrame) then
+			if(GetContainerItemInfo(bag:GetID(), slot:GetID()) and bag ~= EquipmentFlyoutFrameButtons and bag ~= PaperDollItemsFrame) then
 				button:SetAttribute('macrotext', macro:format(spell, bag:GetID(), slot:GetID()))
 				button:SetAllPoints(slot)
 				button:Show()
