@@ -55,7 +55,7 @@ end
 do
 	button:SetScript('OnLeave', Disperse)
 	button:SetScript('OnEvent', function(self, event, ...) self[event](self, event, ...) end)
-	button:SetFrameStrata('DIALOG')
+	button:SetFrameStrata('TOOLTIP')
 	button:RegisterEvent('MODIFIER_STATE_CHANGED')
 	button:RegisterEvent('PLAYER_LOGIN')
 	button:RegisterForClicks('LeftButtonUp')
